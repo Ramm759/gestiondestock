@@ -1,4 +1,4 @@
-package com.myjava.gestiondestock;
+package com.myjava.gestiondestock.entity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
