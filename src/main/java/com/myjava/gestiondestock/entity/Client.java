@@ -2,6 +2,7 @@ package com.myjava.gestiondestock.entity;
 
 
 import jakarta.persistence.*;
+import jakarta.persistence.Id;
 
 import java.util.List;
 
@@ -15,8 +16,7 @@ public class Client extends AbstractEntity {
   @Column(name = "prenom")
   private String prenom;
 
-  @ManyToOne
-  @JoinColumn(name = "adresse_id")
+  @Embedded
   private Adresse adresse;
 
   @Column(name = "photo")
