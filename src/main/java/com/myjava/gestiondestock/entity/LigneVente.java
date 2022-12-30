@@ -1,6 +1,7 @@
 package com.myjava.gestiondestock.entity;
 
 
+import com.myjava.gestiondestock.entity.wihLombok.Article;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
@@ -26,4 +27,43 @@ public class LigneVente extends AbstractEntity {
   @Column(name = "identreprise")
   private Integer idEntreprise;
 
+  public Ventes getVente() {
+    return vente;
+  }
+
+  public void setVente(Ventes vente) {
+    this.vente = vente;
+  }
+
+  public Article getArticle() {
+    return article;
+  }
+
+  public void setArticle(Article article) {
+    this.article = article;
+  }
+
+  public BigDecimal getQuantite() {
+    return quantite;
+  }
+
+  public void setQuantite(BigDecimal quantite) {
+    this.quantite = quantite;
+  }
+
+  public BigDecimal getPrixUnitaire() {
+    return prixUnitaire;
+  }
+
+  public void setPrixUnitaire(BigDecimal prixUnitaire) {
+    this.prixUnitaire = prixUnitaire;
+  }
+
+  public Integer getIdEntreprise() {
+    return idEntreprise;
+  }
+
+  public void setIdEntreprise(Integer idEntreprise) {
+    this.idEntreprise = idEntreprise;
+  }
 }

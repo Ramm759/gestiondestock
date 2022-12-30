@@ -1,5 +1,6 @@
 package com.myjava.gestiondestock.entity;
 
+import com.myjava.gestiondestock.entity.wihLombok.Article;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
@@ -25,4 +26,43 @@ public class LigneCommandeClient extends AbstractEntity {
     @Column(name = "identreprise")
     private Integer idEntreprise;
 
+    public Article getArticle() {
+        return article;
+    }
+
+    public void setArticle(Article article) {
+        this.article = article;
+    }
+
+    public CommandeClient getCommandeClient() {
+        return commandeClient;
+    }
+
+    public void setCommandeClient(CommandeClient commandeClient) {
+        this.commandeClient = commandeClient;
+    }
+
+    public BigDecimal getQuantite() {
+        return quantite;
+    }
+
+    public void setQuantite(BigDecimal quantite) {
+        this.quantite = quantite;
+    }
+
+    public BigDecimal getPrixUnitaire() {
+        return prixUnitaire;
+    }
+
+    public void setPrixUnitaire(BigDecimal prixUnitaire) {
+        this.prixUnitaire = prixUnitaire;
+    }
+
+    public Integer getIdEntreprise() {
+        return idEntreprise;
+    }
+
+    public void setIdEntreprise(Integer idEntreprise) {
+        this.idEntreprise = idEntreprise;
+    }
 }

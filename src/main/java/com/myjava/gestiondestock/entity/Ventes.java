@@ -27,4 +27,44 @@ public class Ventes extends AbstractEntity {
 
   @OneToMany(mappedBy = "vente")
   private List<LigneVente> ligneVentes;
+
+  public String getCode() {
+    return code;
+  }
+
+  public void setCode(String code) {
+    this.code = code;
+  }
+
+  public Instant getDateVente() {
+    return dateVente;
+  }
+
+  public void setDateVente(Instant dateVente) {
+    this.dateVente = dateVente;
+  }
+
+  public String getCommentaire() {
+    return commentaire;
+  }
+
+  public void setCommentaire(String commentaire) {
+    this.commentaire = commentaire;
+  }
+
+  public Integer getIdEntreprise() {
+    return idEntreprise;
+  }
+
+  public void setIdEntreprise(Integer idEntreprise) {
+    this.idEntreprise = idEntreprise;
+  }
+
+  public List<LigneVente> getLigneVentes() {
+    return ligneVentes;
+  }
+
+  public void setLigneVentes(List<LigneVente> ligneVentes) {
+    this.ligneVentes = ligneVentes;
+  }
 }

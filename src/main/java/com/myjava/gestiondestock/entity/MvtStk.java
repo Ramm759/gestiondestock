@@ -1,6 +1,7 @@
 package com.myjava.gestiondestock.entity;
 
 
+import com.myjava.gestiondestock.entity.wihLombok.Article;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
@@ -30,4 +31,52 @@ public class MvtStk extends AbstractEntity {
 
   @Column(name = "identreprise")
   private Integer idEntreprise;
+
+  public Instant getDateMvt() {
+    return dateMvt;
+  }
+
+  public void setDateMvt(Instant dateMvt) {
+    this.dateMvt = dateMvt;
+  }
+
+  public BigDecimal getQuantite() {
+    return quantite;
+  }
+
+  public void setQuantite(BigDecimal quantite) {
+    this.quantite = quantite;
+  }
+
+  public Article getArticle() {
+    return article;
+  }
+
+  public void setArticle(Article article) {
+    this.article = article;
+  }
+
+  public TypeMvtStk getTypeMvt() {
+    return typeMvt;
+  }
+
+  public void setTypeMvt(TypeMvtStk typeMvt) {
+    this.typeMvt = typeMvt;
+  }
+
+  public SourceMvtStk getSourceMvt() {
+    return sourceMvt;
+  }
+
+  public void setSourceMvt(SourceMvtStk sourceMvt) {
+    this.sourceMvt = sourceMvt;
+  }
+
+  public Integer getIdEntreprise() {
+    return idEntreprise;
+  }
+
+  public void setIdEntreprise(Integer idEntreprise) {
+    this.idEntreprise = idEntreprise;
+  }
 }

@@ -13,4 +13,19 @@ public class Roles extends AbstractEntity {
   @JoinColumn(name = "idutilisateur")
   private Utilisateur utilisateur;
 
+  public String getRoleName() {
+    return roleName;
+  }
+
+  public void setRoleName(String roleName) {
+    this.roleName = roleName;
+  }
+
+  public Utilisateur getUtilisateur() {
+    return utilisateur;
+  }
+
+  public void setUtilisateur(Utilisateur utilisateur) {
+    this.utilisateur = utilisateur;
+  }
 }

@@ -6,6 +6,7 @@ import jakarta.persistence.Embeddable;
 import java.io.Serializable;
 
 
+// @Embeddable  pour déclarer qu'une classe sera intégrée par d'autres entités
 @Embeddable
 public class Adresse implements Serializable {
 
