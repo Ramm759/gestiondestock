@@ -27,6 +27,7 @@ public class Client extends AbstractEntity {
   @Column(name = "numTel")
   private String numTel;
 
+  // Pour faciliter le Front
   @Column(name = "identreprise")
   private Integer idEntreprise;
 
